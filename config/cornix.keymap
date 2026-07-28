@@ -124,6 +124,12 @@
             quick-tap-ms = <200>;
         };
 
+        inc_dec_msc: inc_dec_msc {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
+
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -167,13 +173,13 @@
             bindings = <
 &kp TAB         &kp Q         &kp W         &kp E  &kp R      &kp T                         &kp Y  &kp U      &kp I          &kp O           &kp P           &kp BACKSPACE
 &kp LEFT_SHIFT  &kp A         &kp S         &kp D  &kp F      &kp G                         &kp H  &kp J      &kp K          &kp L           &kp SEMICOLON   &kp ENTER
-&lt 6 CAPS      &kp Z         &kp X         &kp C  &kp V      &kp B  &kp K_APP  &kp K_MUTE  &kp N  &kp M      &kp COMMA      &kp DOT         &kp UP_ARROW    &kp SLASH
+&lt 6 CAPS      &kp Z         &kp X         &kp C  &kp V      &kp B  &mkp MB2    &mkp MB1    &kp N  &kp M      &kp COMMA      &kp DOT         &kp UP_ARROW    &kp SLASH
 &kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &mo 2  &kp SPACE  &mo 1                         &mo 3  &kp SPACE  &kp RIGHT_ALT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&inc_dec_msc SCRL_DOWN SCRL_UP>,
+                <&inc_dec_msc SCRL_LEFT SCRL_RIGHT>;
         };
 
         number {
