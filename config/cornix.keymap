@@ -188,26 +188,26 @@
             bindings = <
 &kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0          &trans
 &trans      &trans        &trans        &trans        &trans        &trans                        &trans        &kp MINUS         &kp EQUAL          &kp GRAVE     &kp NON_US_BACKSLASH  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans                &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &kp K_APP     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans                &trans
 &trans      &trans        &trans        &trans        &trans        &trans                        &trans        &trans            &trans             &trans        &trans                &trans
             >;
         };
 
         funckey {
             bindings = <
-&kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7   &kp F8   &kp F9  &kp F10  &trans
-&trans      &trans  &trans  &trans  &trans  &trans                  &trans  &kp F11  &kp F12  &trans  &kp SQT  &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans  &trans   &trans
-&trans      &trans  &trans  &trans  &trans  &trans                  &trans  &trans   &trans   &trans  &trans   &trans
+&kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6     &kp F7   &kp F8   &kp F9  &kp F10  &trans
+&trans      &trans  &trans  &trans  &trans  &trans                  &trans     &kp F11  &kp F12  &trans  &kp SQT  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_APP  &trans   &trans   &trans  &trans   &trans
+&trans      &trans  &trans  &trans  &trans  &trans                  &trans     &trans   &trans   &trans  &trans   &trans
             >;
         };
 
         modkey {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp INS     &kp HOME  &kp PAGE_UP    &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp DELETE  &kp END   &kp PAGE_DOWN  &kp SQT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans         &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans      &trans    &trans         &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &kp INS     &kp HOME  &kp PAGE_UP    &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &kp DELETE  &kp END   &kp PAGE_DOWN  &kp SQT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_APP  &trans      &trans    &trans         &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans      &trans    &trans         &trans   &trans
             >;
         };
 
