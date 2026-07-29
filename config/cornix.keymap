@@ -128,6 +128,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
+            tap-ms = <200>;
         };
 
         lt: layer_tap {
@@ -177,9 +178,10 @@
 &kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &mo 2  &kp SPACE  &mo 1                      &mo 3  &kp SPACE  &kp RIGHT_ALT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
-            sensor-bindings =
-                <&inc_dec_msc SCRL_DOWN SCRL_UP>,
-                <&inc_dec_msc SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <
+                &inc_dec_msc SCRL_DOWN SCRL_UP
+                &inc_dec_msc SCRL_RIGHT SCRL_LEFT
+            >;
         };
 
         number {
